@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Obinna Onyekwere</title>
+    <meta name="description" content="Andrew Obinna Onyekwerem" />
+    <meta name="author" content="Andrew Obinna Onyekwere" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="profile-container">
+        <img
+          src="images/profile.jpg"
+          alt="Andrew's Profile Image"
+          class="profile-img"
+        />
+        <h1>Andrew O. Onyekwere</h1>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          &#9776;
+          <!-- Hamburger icon -->
+        </button>
+      </div>
+    </header>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="https://github.com/obylo98">GitHub Profile</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/obinnaa-onyekwere/">LinkedIn</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="sections-container">
+        <div class="section course-work">
+          <h2>Course Work</h2>
+          <ul>
+            <li>Task</li>
+            <li>Task</li>
+            <li>Task</li>
+          </ul>
+        </div>
+        <div class="section aba">
+          <h2>Aba, Nigeria</h2>
+          <img src="images/aba.jpg" alt="aba" />
+          <p>Aba Owerri Road</p>
+        </div>
+      </div>
+
+      <section class="certificate">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="course-filter">
+          <button id="filter-all">All</button>
+          <button id="filter-cse">CSE</button>
+          <button id="filter-wdd">WDD</button>
+        </div>
+        <div class="courses">
+          <button class="course cse">CSE 110</button>
+          <button class="course wdd">WDD 130</button>
+          <button class="course cse">CSE 111</button>
+          <button class="course cse">CSE 210</button>
+          <button class="course wdd">WDD 131</button>
+          <button class="course wdd">WDD 231</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span>🌸 Andrew Obinna Onyekwere 🌸
+        Nigeria
+      </p>
+      <p>Last Update: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
