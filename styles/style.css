@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #336699;
+  background-color: #152D42;
   color: white;
   padding: 20px;
   text-align: center;
@@ -135,7 +135,7 @@ main {
 
 /* Footer */
 footer {
-  background-color: #336699;
+  background-color: #152D42;
   color: white;
   text-align: center;
   padding: 20px;
@@ -178,7 +178,7 @@ footer {
     color: white;
     font-size: 2rem;
     cursor: pointer;
-    display: block; 
+    display: block;
   }
 
   nav ul {
