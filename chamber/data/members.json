@@ -1,0 +1,72 @@
+[
+  {
+    "name": "NaijaTech Hub",
+    "address": "Plot 23, Tech Village, Victoria Island, Lagos",
+    "phone": "+234 803 555 1234",
+    "website": "https://www.naijatechhub.com",
+    "icon": "./images/naijatech.webp",
+    "membershipLevel": 3,
+    "establishedYear": 2015,
+    "industry": "Technology"
+  },
+  {
+    "name": "EcoLife Solutions",
+    "address": "12 Green Avenue, Garki, Abuja",
+    "phone": "+234 809 555 6789",
+    "website": "https://www.ecolifesolutions.com.ng",
+    "icon": "./images/ecolife.webp",
+    "membershipLevel": 2,
+    "establishedYear": 2013,
+    "industry": "Environmental Services"
+  },
+  {
+    "name": "West African Logistics",
+    "address": "5 Wharf Road, Apapa, Lagos",
+    "phone": "+234 701 555 9012",
+    "website": "https://www.walogistics.com.ng",
+    "icon": "./images/westafrican.webp",
+    "membershipLevel": 3,
+    "establishedYear": 2008,
+    "industry": "Logistics"
+  },
+  {
+    "name": "NigerMed Health",
+    "address": "33 Medical Complex, Wuse 2, Abuja",
+    "phone": "+234 705 555 3456",
+    "website": "https://www.nigermedhealth.com",
+    "icon": "./images/nigermed.webp",
+    "membershipLevel": 1,
+    "establishedYear": 2017,
+    "industry": "Healthcare"
+  },
+  {
+    "name": "CleanNaija Services",
+    "address": "78 Sanitation Road, Ikeja, Lagos",
+    "phone": "+234 803 555 7890",
+    "website": "https://www.cleannaijaservices.com",
+    "icon": "./images/cleannaija.webp",
+    "membershipLevel": 2,
+    "establishedYear": 2014,
+    "industry": "Cleaning Services"
+  },
+  {
+    "name": "Zenith Finance Group",
+    "address": "20 Broad Street, Marina, Lagos",
+    "phone": "+234 802 555 6543",
+    "website": "https://www.zenithfinancegroup.com",
+    "icon": "./images/zenith.webp",
+    "membershipLevel": 3,
+    "establishedYear": 2002,
+    "industry": "Finance"
+  },
+  {
+    "name": "Creative Media Africa",
+    "address": "11 Creative Avenue, Lekki Phase 1, Lagos",
+    "phone": "+234 909 555 3210",
+    "website": "https://www.creativemediaafrica.com.ng",
+    "icon": "./images/creative.webp",
+    "membershipLevel": 1,
+    "establishedYear": 2019,
+    "industry": "Media & Marketing"
+  }
+]

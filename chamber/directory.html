@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Collective Chamber of Commerce: Directory Page</title>
+    <meta
+      name="description"
+      content="Chamber Directory Page by Andrew Obinna Onyekwere"
+    />
+    <meta name="author" content="Andrew Obinna Onyekwere" />
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Chamber Directory Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://github.com/obylo98/wdd231/blob/main/chamber/images/hero.webp" />
+    <meta
+      property="og:url"
+      content="https://obylo98.github.io/wdd231/chamber/directory.html"
+    />
+    <!-- *** Call to Action *** -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="The Collective Chamber of Commerce Directory Page by Andrew Obinna Onyekwere"
+    />
+    <meta property="og:site_name" content="Obylo98" />
+    <meta
+      name="twitter:image:alt"
+      content="Arial view of victoria falls attractions"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Embed Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="stylesheet" href="styles/directory-mobile.css" />
+    <script src="scripts/directory.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="images/hero.webp" alt="Chamber of Commerce" />
+        <div>
+          <h1>The Collective</h1>
+          <p>Chamber of Commerce</p>
+          <a href="#" id="menu"></a>
+        </div>
+      </section>
+      <nav>
+        <a href="index.html">Home</a><a href="#" class="active">Directory</a
+        ><a href="#">Join</a><a href="#">Discover</a>
+        <!-- <a href="#">🌓</a> -->
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/hero.webp" />
+          <!-- <source media="(min-width: )" srcset=""> -->
+          <img src="images/hero.webp" alt="Hero image" />
+        </picture>
+        <button>Keynote Tickets</button>
+      </section>
+      <h2>Home</h2>
+      <section id="info">
+        <section>
+          <h3>Events</h3>
+          <div id="events">
+            <ul>
+              <li>More to come</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h3>Current Weather</h3>
+          <div id="weather">
+            <p id="emoji">⛅</p>
+            <div id="stuff">
+              <p>75⁰F</p>
+              <p>Partly Cloudy</p>
+              <p>High: 85⁰</p>
+              <p>Low: 52⁰</p>
+              <p>Humidity: 34%</p>
+              <p>Sunrise: 7:30am</p>
+              <p>Sunset: 9:59pm</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Weather Forecast</h3>
+          <p>Today: <strong>90⁰F</strong></p>
+          <p>Wednesday: <strong>89⁰</strong></p>
+          <p>Thursday: <strong>68⁰</strong></p>
+        </section>
+      </section>
+      <div class="menu">
+        <h2>Businesses</h2>
+        <button id="grid">⏹️Grid</button>
+        <button id="list">📄List</button>
+      </div>
+      <section id="bussiness" class="grid"></section>
+    </main>
+    <footer>
+      <section id="address">
+        <p><strong>The Collective Chamber of Commerce</strong></p>
+        <p>10 Maya</p>
+        <p>Goshen, plot 10</p>
+        <p>info@homie.com</p>
+        <p>(434)434-5141</p>
+      </section>
+      <section id="social">
+        <a href="https://www.facebook.com/"
+          ><img
+            src="images/icons8-facebook.svg"
+            alt="facebook Icon by Icons8"
+        /></a>
+        <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"
+          ><img
+            src="images/icons8-linkedin.svg"
+            alt="linkedin Icon by Icons8"
+        /></a>
+        <a href="https://x.com/?lang=en"
+          ><img src="images/icons8-twitterx.svg" alt="twitter Icon by Icons8"
+        /></a>
+      </section>
+      <section id="miei">
+        <p>WDD231 Class Project</p>
+        <p>Andrew Obinna Onyekwere</p>
+        <p>&copy;<span id="year"></span> The Collective Chamber of Commerce</p>
+        <p id="lastmodified"></p>
+      </section>
+    </footer>
+  </body>
+</html>
