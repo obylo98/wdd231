@@ -82,7 +82,7 @@ main {
   height: 500px;
 }
 
-#hero button {
+.button-style {
   background-image: linear-gradient(
     to right,
     #314755 0%,
@@ -97,14 +97,14 @@ main {
   color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
-
+  text-decoration: none; 
   position: absolute;
   bottom: 100px;
   right: 120px;
   padding: 10px;
 }
 
-#hero button:hover {
+.button-style:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;

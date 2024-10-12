@@ -93,7 +93,7 @@
     z-index: 1;
   }
 
-  #hero button {
+  .button-style {
     bottom: 300px;
     right: 40px;
     z-index: 2;
