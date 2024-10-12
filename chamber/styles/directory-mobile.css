@@ -71,7 +71,7 @@
     }
   
     nav.show a.active {
-      color: rgb(233 206 206);
+      color: rgb(255, 255, 255);
     }
   
     /* main */
@@ -108,6 +108,7 @@
   
     /* footer */
     footer {
+      padding-left: 4rem;
       gap: 20px;
       place-items: first baseline;
     }
