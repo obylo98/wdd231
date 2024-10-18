@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Chamber of Commerce: Join Page</title>
+    <meta
+      name="description"
+      content="Chamber Join Page by Andrew Obinna Onyekwere"
+    />
+    <meta name="author" content="Andrew Obinna Onyekwere" />
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Chamber Join Page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/obylo98/wdd231/main/chamber/images/hero.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://obylo98.github.io/wdd231/chamber/join.html"
+    />
+    <!-- *** Call to Action *** -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="The Chammber of Commerce Join Page by Andrew Obinna Onyekwere"
+    />
+    <meta property="og:site_name" content="obylo98" />
+    <meta
+      name="twitter:image:alt"
+      content="attractions"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/join-mobile.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="images/hero.webp" alt="logo" />
+        <div>
+          <h1>The </h1>
+          <p>Chamber of Commerce</p>
+          <a href="#" id="menu"></a>
+        </div>
+      </section>
+      <nav>
+        <a href="#" class="active">Join</a><a href="directory.html">Directory</a
+        ><a href="join.html">Join</a><a href="#">Discover</a>
+        <!-- <a href="#">🌓</a> -->
+      </nav>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <div class="form-container">
+          <h1>Apply for Membership</h1>
+          <div class="membership-form-wrapper">
+            <form action="thankyou.html" method="get">
+              <div class="form-group">
+                <label for="firstname">
+                  First Name:
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    required
+                    title="First Name"
+                    autocomplete="given-name"
+                  />
+                </label>
+                <br />
+                <label for="lastname">
+                  Last Name:
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    required
+                    title="Last Name"
+                    autocomplete="family-name"
+                  />
+                </label>
+                <br />
+                <label for="org_title">
+                  Organizational Title:
+                  <input
+                    type="text"
+                    id="org_title"
+                    name="org_title"
+                    pattern="[A-Za-z\- ]{7,}"
+                    title="Organizational Title"
+                    autocomplete="organization-title"
+                  />
+                </label>
+                <br />
+                <label for="email">
+                  Email Address:
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    title="Email"
+                    autocomplete="email"
+                    placeholder="example@mail.com"
+                  />
+                </label>
+                <br />
+                <label for="mobile">
+                  Mobile Phone Number:
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    required
+                    title="Mobile Phone"
+                    autocomplete="tel"
+                  />
+                </label>
+                <br />
+                <label for="business">
+                  Business/Organization Name:
+                  <input
+                    type="text"
+                    id="business"
+                    name="business"
+                    required
+                    title="Business/Organization Name"
+                    autocomplete="organization"
+                  />
+                </label>
+                <br />
+                <label for="membership_level">
+                  Membership Level:
+                  <select
+                    id="membership_level"
+                    name="membership_level"
+                    required
+                    title="Select Membership Level"
+                  >
+                    <option value="np">NP Membership (non-profit, no fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                  </select>
+                </label>
+                <br />
+                <label for="business_desc">
+                  Business Description:
+                  <textarea
+                    id="business_desc"
+                    name="business_desc"
+                    title="Business Description"
+                  ></textarea>
+                </label>
+                <br />
+                <input type="hidden" name="timestamp" id="timestamp" />
+                <input type="submit" value="Submit Application" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <section id="membership-cards">
+          <div class="card" id="np-card">
+            <h2>NP Membership</h2>
+            <button class="open-button" data-modal="np-modal">Details</button>
+          </div>
+          <div class="card" id="bronze-card">
+            <h2>Bronze Membership</h2>
+            <button class="open-button" data-modal="bronze-modal">Details</button>
+          </div>
+          <div class="card" id="silver-card">
+            <h2>Silver Membership</h2>
+            <button class="open-button" data-modal="silver-modal">Details</button>
+          </div>
+          <div class="card" id="gold-card">
+            <h2>Gold Membership</h2>
+            <button class="open-button" data-modal="gold-modal">Details</button>
+          </div>
+        </section>
+      </div>
+      <dialog id="np-modal" class="modal">
+        <p>
+          NP Membership Benefits: Access to exclusive workshops and resources,
+          free of charge for non-profits.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+      <dialog id="bronze-modal" class="modal">
+        <p>
+          Bronze Membership Benefits: Basic support, newsletter subscriptions, and
+          event invitations.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+      <dialog id="silver-modal" class="modal">
+        <p>
+          Silver Membership Benefits: Enhanced support, discounts on events, and
+          networking opportunities.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+      <dialog id="gold-modal" class="modal">
+        <p>
+          Gold Membership Benefits: Full support including personalized services,
+          all-access membership privileges, and premium networking events.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+    </main>
+    <footer>
+      <section id="address">
+        <p><strong>The Chamber of Commerce</strong></p>
+        <p>10 Maya</p>
+        <p>Goshen, plot 10</p>
+        <p>info@homie.com</p>
+        <p>(434)434-5141</p>
+      </section>
+      <section id="social">
+        <a href="https://www.facebook.com/"
+          ><img
+            src="images/icons8-facebook.svg"
+            alt="facebook Icon by Icons8"
+        /></a>
+        <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"
+          ><img
+            src="images/icons8-linkedin.svg"
+            alt="linkedin Icon by Icons8"
+        /></a>
+        <a href="https://x.com/?lang=en"
+          ><img src="images/icons8-twitterx.svg" alt="twitter Icon by Icons8"
+        /></a>
+      </section>
+      <section id="mine">
+        <p>WDD231 Class Project</p>
+        <p>Andrew Obinna Onyekwere</p>
+        <p>&copy;<span id="year"></span> The Chamber of Commerce</p>
+        <p id="lastmodified"></p>
+      </section>
+    </footer>
+
+    <script src="scripts/join.js" type="module"></script>
+  </body>
+</html>
