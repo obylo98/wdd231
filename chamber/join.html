@@ -30,10 +30,7 @@
       content="The Chammber of Commerce Join Page by Andrew Obinna Onyekwere"
     />
     <meta property="og:site_name" content="obylo98" />
-    <meta
-      name="twitter:image:alt"
-      content="attractions"
-    />
+    <meta name="twitter:image:alt" content="attractions" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +48,7 @@
       <section>
         <img src="images/hero.webp" alt="logo" />
         <div>
-          <h1>The </h1>
+          <h1>The</h1>
           <p>Chamber of Commerce</p>
           <a href="#" id="menu"></a>
         </div>
@@ -150,7 +147,13 @@
                     required
                     title="Select Membership Level"
                   >
-                    <option value="np">NP Membership (non-profit, no fee)</option>
+                    <option value="" disabled selected>
+                      Select your membership level
+                    </option>
+                    <!-- Placeholder option -->
+                    <option value="np">
+                      NP Membership (non-profit, no fee)
+                    </option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>
                     <option value="gold">Gold Membership</option>
@@ -179,11 +182,15 @@
           </div>
           <div class="card" id="bronze-card">
             <h2>Bronze Membership</h2>
-            <button class="open-button" data-modal="bronze-modal">Details</button>
+            <button class="open-button" data-modal="bronze-modal">
+              Details
+            </button>
           </div>
           <div class="card" id="silver-card">
             <h2>Silver Membership</h2>
-            <button class="open-button" data-modal="silver-modal">Details</button>
+            <button class="open-button" data-modal="silver-modal">
+              Details
+            </button>
           </div>
           <div class="card" id="gold-card">
             <h2>Gold Membership</h2>
@@ -200,8 +207,8 @@
       </dialog>
       <dialog id="bronze-modal" class="modal">
         <p>
-          Bronze Membership Benefits: Basic support, newsletter subscriptions, and
-          event invitations.
+          Bronze Membership Benefits: Basic support, newsletter subscriptions,
+          and event invitations.
         </p>
         <button class="close-button">Close</button>
       </dialog>
@@ -214,8 +221,9 @@
       </dialog>
       <dialog id="gold-modal" class="modal">
         <p>
-          Gold Membership Benefits: Full support including personalized services,
-          all-access membership privileges, and premium networking events.
+          Gold Membership Benefits: Full support including personalized
+          services, all-access membership privileges, and premium networking
+          events.
         </p>
         <button class="close-button">Close</button>
       </dialog>
@@ -230,14 +238,10 @@
       </section>
       <section id="social">
         <a href="https://www.facebook.com/"
-          ><img
-            src="images/icons8-facebook.svg"
-            alt="facebook Icon by Icons8"
+          ><img src="images/icons8-facebook.svg" alt="facebook Icon by Icons8"
         /></a>
         <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"
-          ><img
-            src="images/icons8-linkedin.svg"
-            alt="linkedin Icon by Icons8"
+          ><img src="images/icons8-linkedin.svg" alt="linkedin Icon by Icons8"
         /></a>
         <a href="https://x.com/?lang=en"
           ><img src="images/icons8-twitterx.svg" alt="twitter Icon by Icons8"
