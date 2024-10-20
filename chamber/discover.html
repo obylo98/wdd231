@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Chammber of Commerce: Discover Page</title>
+    <meta
+      name="description"
+      content="Chamber Discover Page by Andrew Obinna Onyekwere"
+    />
+    <meta name="author" content="Andrew Obinna Onyekwere" />
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Chamber Discover Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/hero.webp" />
+    <meta
+      property="og:url"
+      content="https://obylo98.github.io/wdd231/chamber/Discover.html"
+    />
+    <!-- *** Call to Action *** -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="The Chammber of Commerce Discover Page by Andrew Obinna Onyekwere"
+    />
+    <meta property="og:site_name" content="Obylo98" />
+    <meta
+      name="twitter:image:alt"
+      content="Arial view of victoria falls attractions"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="stylesheet" href="styles/directory-mobile.css" />
+    <script src="scripts/directory.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="images/hero.webp" alt="logo" />
+        <div>
+          <h1>The</h1>
+          <p>Chamber of Commerce</p>
+          <a href="#" id="menu"></a>
+        </div>
+      </section>
+      <nav>
+        <a href="index.html">Home</a><a href="directory.html">Directory</a
+        ><a href="join.html">Join</a><a href="discover.html" class="active">Discover</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/hero.webp" />
+          <!-- <source media="(min-width: )" srcset=""> -->
+          <img src="images/hero.webp" alt="Hero image" />
+        </picture>
+      </section>
+      <div class="grid-container">
+        <aside id="sidebar" class="sidebar">
+            <div>
+              <p id="visit-message">Welcome Message Here</p>
+              <button id="close">X</button>
+              <ul>
+                <li>Demographic Information</li>
+              </ul>
+            </div>
+            <iframe
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Africa%2FLagos&showPrint=0&src=MjhlOTg0MjI0NWJhYTlhYzcwYWY2ZWRjMWRhYmU4NmI1MTFkMGViZjZhNGZlYzE2MjBhODIzODg2OGE2MGE4NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uZ2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234285F4&color=%230B8043"
+              style="border: solid 1px #777"
+              width="800"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </aside>
+          <section class="main-content">
+            <h2>Explore Nigeria</h2>
+            <div class="gallery">
+              <figure>
+                <img
+                  data-src="images/Ikoyibridge.webp"
+                  alt="Lagos, Ikoyi bridge"
+                  class="lazy"
+                />
+                <figcaption>Ikoyi bridge</figcaption>
+              </figure>
+              <figure>
+                <img
+                  data-src="images/Lagosnigeria.webp"
+                  alt="Night in Lagos, Nigeria"
+                  class="lazy"
+                />
+                <figcaption>Lagos Night</figcaption>
+              </figure>
+              <figure>
+                <img
+                  data-src="images/Millenniumpark.webp"
+                  alt="Millennium Park - Abuja, Nigeria "
+                  class="lazy"
+                />
+                <figcaption>Millennium Park - Abuja, Nigeria </figcaption>
+              </figure>
+              <!-- Add more figures as needed -->
+            </div>
+          </section>
+      </div>
+      
+    </main>
+    <footer>
+      <section id="address">
+        <p><strong>The Chamber of Commerce</strong></p>
+        <p>10 Maya</p>
+        <p>Goshen, plot 10</p>
+        <p>info@homie.com</p>
+        <p>(434)434-5141</p>
+      </section>
+      <section id="social">
+        <a href="https://www.facebook.com/"
+          ><img src="images/icons8-facebook.svg" alt="facebook Icon by Icons8"
+        /></a>
+        <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"
+          ><img src="images/icons8-linkedin.svg" alt="linkedin Icon by Icons8"
+        /></a>
+        <a href="https://x.com/?lang=en"
+          ><img src="images/icons8-twitterx.svg" alt="twitter Icon by Icons8"
+        /></a>
+      </section>
+      <section id="mine">
+        <p>WDD231 Class Project</p>
+        <p>Andrew Obinna Onyekwere</p>
+        <p>&copy;<span id="year"></span> The Chamber of Commerce</p>
+        <p id="lastmodified"></p>
+      </section>
+    </footer>
+  </body>
+</html>

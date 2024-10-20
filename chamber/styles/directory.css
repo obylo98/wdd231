@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 .active {
-  background-color: #0000FF;
+  background-color: #0000ff;
   padding: 0 8px;
   border-radius: 30px;
 }
@@ -262,11 +262,11 @@ main {
 
 /* discover page */
 
-#discover {
+/* #discover {
   display: grid;
   grid-template-columns: 2fr 5fr;
   gap: 10px;
-}
+} */
 
 #sidebar {
   position: relative;
@@ -280,8 +280,9 @@ main {
 }
 
 /* welcome msg */
-#welcome {
-  background-image: var(--button-img);
+
+#visit-welcome {
+  background-image: var(--main-color);
   position: sticky;
 }
 
@@ -290,19 +291,16 @@ main {
   top: 25px;
   right: 10px;
   font-size: 10px;
-  background-image: var(--button-img);
+  background-image: var(--main-color);
   color: rgb(14, 13, 13);
   border: none;
 }
 
-.close {
-  display: none;
-}
 
 /* calender */
 iframe {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 300px;
 }
 
@@ -339,4 +337,57 @@ footer p {
 
 #lastmodified {
   color: yellow;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+}
+
+.lazy {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lazy.loaded {
+  opacity: 1;
+}
+
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
 }
