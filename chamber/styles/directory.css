@@ -282,8 +282,8 @@ main {
 /* welcome msg */
 
 #visit-welcome {
-  background-image: var(--main-color);
   position: sticky;
+  background-color: var(--main-color);
 }
 
 #close {
@@ -291,11 +291,9 @@ main {
   top: 25px;
   right: 10px;
   font-size: 10px;
-  background-image: var(--main-color);
   color: rgb(14, 13, 13);
   border: none;
 }
-
 
 /* calender */
 iframe {
@@ -379,7 +377,6 @@ figure {
 .lazy.loaded {
   opacity: 1;
 }
-
 
 figcaption {
   position: absolute;
