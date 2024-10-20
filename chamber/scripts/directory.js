@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Existing code
 
-  // Target elements for the first HTML file (e.g., business.html)
+  // Target elements for the first HTML file 
   const cards = document.querySelector("#bussiness");
   const ham = document.querySelector("#menu");
   const nav = document.querySelector("nav");
   const gridbutton = document.querySelector("#grid");
   const listbutton = document.querySelector("#list");
 
-  // Only run this part if the element exists (for the first HTML file)
+  // Only run this part if the element exists 
   if (ham && nav) {
     // Responsive ham and nav
     ham.addEventListener("click", () => {
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lastModifiedElement.innerHTML = `Last modified: ${document.lastModified}`;
   }
 
-  // Fetch and display business members data only if on the correct page
+  // Fetch and display business members data o
   if (cards) {
     const url = "./data/members.json";
     getMemberData(url);
@@ -91,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchWeather();
   }
 
-  // NEW CODE: Adding the functionality for welcome and closeBtn
   const welcome = document.querySelector("#vist-message");
   const closeBtn = document.querySelector("#close");
 
@@ -106,8 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to fetch weather data
 function fetchWeather() {
-  const apiKey = 'fa1b52168658bac8c6d12ea05893adba'; // Replace with your OpenWeather API Key
-  const city = 'Lagos'; // Replace with the relevant city
+  const apiKey = 'fa1b52168658bac8c6d12ea05893adba'; 
+  const city = 'Lagos'; 
 
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`)
     .then(response => response.json())
@@ -150,7 +148,7 @@ function displayWeather(data) {
   sidebar.appendChild(weatherInfo);
 }
 
-// Helper function to get weather emoji based on description
+// Helper function to get weather emoji
 function getWeatherEmoji(description) {
   if (description.includes('clear')) return '☀️';
   if (description.includes('clouds')) return '☁️';
