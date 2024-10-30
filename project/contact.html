@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/project/styles/contact.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="navbar-logo">
+        <img src="/project/images/logo.svg" alt="SERENE escapes logo" />
+      </div>
+      <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+      <div class="navbar-icons">
+        <a href="#"><i class="icon-search"></i></a>
+        <a href="#"><i class="icon-map"></i></a>
+        <a href="#"><i class="icon-profile"></i></a>
+      </div>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-overlay">
+          <h1>Welcome to Subscription Service</h1>
+          <p>
+            We're here to help you
+            get started!
+          </p>
+          <button class="hero-btn">Explore Now</button>
+        </div>
+      </section>
+      <!-- Form Container -->
+      <div class="form-container">
+        <h2>Subscription Inquiry</h2>
+        <form id="inquiryForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subscription">Subscription Type</label>
+            <select id="subscription" name="subscription" required>
+              <option value="" disabled selected>Select Subscription</option>
+              <option value="Basic">Basic</option>
+              <option value="Standard">Standard</option>
+              <option value="Premium">Premium</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comments">Additional Comments</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Add any additional comments here..."
+            ></textarea>
+          </div>
+          <button type="button" class="submit-btn" onclick="submitForm()">
+            Submit Inquiry
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="/project/images/logo.svg" alt="Serene Escapes Logo" />
+          <h2>SERENE escapes</h2>
+        </div>
+        <p class="footer-description">
+          Discover a premier digital consumer brand offering comprehensive
+          travel information and inspiration. With a rich heritage of over 30
+          years in print and two decades online, this platform provides accurate
+          content on top global destinations. From cities and airports to
+          resorts and attractions, our dedicated editorial team updates the
+          portal daily, attracting millions of unique users monthly.
+        </p>
+      </div>
+
+      <div class="footer-subscribe">
+        <p>Subscribe to our channel</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Email" aria-label="Email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>ABOUT</h4>
+          <a href="#">FAQs</a>
+        </div>
+        <div class="footer-column">
+          <h4>DESTINATIONS</h4>
+          <a href="#">Trips</a>
+          <a href="#">News</a>
+        </div>
+        <div class="footer-column">
+          <h4>COMMUNITY</h4>
+          <a href="#">Vlogs</a>
+          <a href="#">Events</a>
+          <a href="#">Podcasts</a>
+        </div>
+        <div class="footer-column">
+          <h4>SHOP</h4>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,566 @@
+/* styles.css */
+:root {
+  --main-color: rgb(40, 54, 24);
+  --header-color: rgb(255, 255, 255);
+  --paragraph-color: rgb(192, 190, 190);
+  --button-img: linear-gradient(rgb(255, 255, 0), rgb(255, 138, 5));
+  --card-color: rgb(223, 225, 226);
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--header-color);
+  font-weight: 600;
+}
+
+.navbar-icons a {
+  display: inline-block;
+  margin-left: 10px;
+  color: #4a4a4a;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: #4a4a4a;
+  border-radius: 5px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #f8f8f8;
+  padding-top: 60px;
+  gap: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu a {
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/project/images/hero.webp"); /* Replace with the actual image URL */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0 20px;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: #555;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 20px;
+  text-align: left;
+}
+
+.destinations-section,
+.news-section {
+  margin: 20px;
+}
+
+/* Best Destinations Section */
+.destinations-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.card-des {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 10px;
+  min-width: 200px;
+  flex: 0 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-des img {
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.card-des p {
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.8em;
+}
+
+/* Latest News Section */
+.news-content {
+  display: flex;
+  gap: 20px;
+}
+
+.main-article,
+.secondary-article {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-article {
+  flex: 2;
+  text-align: center;
+}
+
+.main-article img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.main-article p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.secondary-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.secondary-article {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.secondary-article img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.secondary-article p {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  color: #333;
+  max-width: 70%;
+}
+
+.user-count {
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.user-count span {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+/* Tours Section */
+.tours-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tours-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.view-all {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Card Styles */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-prix {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: calc(33.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.price {
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  position: absolute;
+  margin-top: -10px;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 150px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-prix h3 {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.rating {
+  color: #ffa500;
+}
+
+/* Header */
+.community-header {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Image Grid */
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 150px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  flex: 1;
+}
+
+/* Footer General Styles */
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-description {
+  max-width: 600px;
+  margin: 20px 0;
+  color: #666;
+}
+
+.footer-subscribe {
+  margin: 20px 0;
+}
+
+.footer-subscribe p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-links {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #0073e6;
+}
+
+/* Subscribe Section */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links,
+  .navbar-icons {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .mobile-menu.show {
+    transform: translateX(0);
+  }
+
+  .hero {
+    height: 60vh;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    max-width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero-btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  .destinations-container {
+    gap: 10px;
+  }
+
+  .news-content {
+    flex-direction: column;
+  }
+
+  .main-article img {
+    height: 120px;
+  }
+
+  .secondary-article img {
+    width: 50px;
+    height: 50px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-left: 10px;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tours-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-prix {
+    width: 100%;
+  }
+
+  .image-grid {
+    flex-direction: column;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-description {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-subscribe {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-form button {
+    width: 100%;
+  }
+}

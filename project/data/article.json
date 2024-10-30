@@ -1,0 +1,65 @@
+{
+    "articles": [
+      {
+        "title": "Top 10 Must-Visit Destinations in Europe",
+        "picture": "./images/art1.webp",
+        "read_time": "6 min"
+      },
+      {
+        "title": "A Guide to Exploring Japan's Hidden Gems",
+        "picture": "./images/art2.webp",
+        "read_time": "7 min"
+      },
+      {
+        "title": "Best Road Trips Across the United States",
+        "picture": "./images/art3.webp",
+        "read_time": "5 min"
+      },
+      {
+        "title": "Unforgettable Adventures in South America",
+        "picture": "./images/art4.webp",
+        "read_time": "8 min"
+      },
+      {
+        "title": "Discovering the Wonders of New Zealand",
+        "picture": "./images/art5.webp",
+        "read_time": "6 min"
+      },
+      {
+        "title": "Top Hiking Trails in the Swiss Alps",
+        "picture": "./images/art6.webp",
+        "read_time": "5 min"
+      },
+      {
+        "title": "Experience the Magic of Bali's Culture",
+        "picture": "./images/art7.webp",
+        "read_time": "4 min"
+      },
+      {
+        "title": "Safari Adventures: Best Places to See Wildlife in Africa",
+        "picture": "./images/art8.webp",
+        "read_time": "7 min"
+      },
+      {
+        "title": "Exploring the Ancient Ruins of Greece",
+        "picture": "./images/art9.webp",
+        "read_time": "6 min"
+      },
+      {
+        "title": "The Ultimate Travel Guide to Australia’s Outback",
+        "picture": "./images/art10.webp",
+        "read_time": "9 min"
+      },
+      {
+        "title": "A Food Lover's Journey Through Italy",
+        "picture": "./images/art11.webp",
+        "read_time": "5 min"
+      },
+      {
+        "title": "Iceland's Breathtaking Landscapes and Waterfalls",
+        "picture": "./images/art12.webp",
+        "read_time": "6 min"
+      }
+    ]
+  }
+  
