@@ -1,11 +1,22 @@
 const apiKey = "274A43957F2949F5B8F50EB4357AE6BF"; // Replace with your API key
 const corsProxy = "https://justcors.com/tl_64195f4/"; // A public CORS proxy
 
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeButton = document.querySelector(".close-btn");
+
+hamburgerMenu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("show");
+});
+
+closeButton.addEventListener("click", () => {
+  mobileMenu.classList.remove("show");
+});
+
 document
   .getElementById("clearBookingsButton")
   .addEventListener("click", clearAllBookings);
 document.getElementById("searchButton").addEventListener("click", searchItems);
-
 
 async function fetchWithCors(url) {
   try {

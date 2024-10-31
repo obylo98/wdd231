@@ -1,152 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <link rel="stylesheet" href="/project/styles/main.css" />
-    <script src="/project/scripts/main.js" defer></script>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <header class="navbar">
-      <div class="navbar-logo">
-        <img src="/project/images/logo.svg" alt="Global Trip Planner logo" />
-      </div>
-      <nav class="navbar-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="book.html">Booking</a>
-      </nav>
-      <div class="navbar-icons">
-        <a href="#"><i class="icon8-search"><img src="/project/images/search.svg" alt="search"></i></a>
-        <a href="#"><i class="icon-map"><img
-            src="/project/images/map.svg"
-            alt="map"
-        /></i></a>
-        <a href="#"><i class="icon-profile"></i><img
-          src="/project/images/profile.svg"
-          alt="profile"
-      /></a>
-      </div>
-      <div class="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Trip Planner: Home Page</title>
+  <meta name="description" content=" Global Trip Planner HomePage by Andrew Obinna Onyekwere" />
+  <meta name="author" content="Andrew Obinna Onyekwere" />
+
+  <!--  Essential META Tags -->
+  <meta property="og:title" content="Global Trip Planner HomePage" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/obylo98/wdd231/main/project/images/hero.webp" />
+  <meta property="og:url" content="https://obylo98.github.io/wdd231/project/index.html" />
+  <!-- *** Call to Action *** -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!--  Non-Essential, But Recommended -->
+  <meta property="og:description" content="Global Planner Home Page by Andrew Obinna Onyekwere" />
+  <meta property="og:site_name" content="Obylo98" />
+  <meta name="twitter:image:alt" content="Arial view of victoria falls attractions" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Embed Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/project/styles/normalize.css" />
+  <link rel="stylesheet" href="/project/styles/main.css" />
+  <script src="/project/scripts/main.js" defer></script>
+  <link rel="icon" href="/project/images/favicon.ico" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-logo">
+      <img src="/project/images/logo.svg" alt="Global Trip Planner logo" />
+    </div>
+    <nav class="navbar-links">
       <a href="index.html" class="active">Home</a>
       <a href="destinations.html">Destinations</a>
-      <a href="trips.html">Trips</a>
       <a href="contact.html">Contact Us</a>
       <a href="book.html">Booking</a>
+    </nav>
+    <div class="navbar-icons">
+      <a href="#"><i class="icon8-search"><img src="/project/images/search.svg" alt="search"></i></a>
+      <a href="#"><i class="icon-map"><img src="/project/images/map.svg" alt="map" /></i></a>
+      <a href="#"><i class="icon-profile"></i><img src="/project/images/profile.svg" alt="profile" /></a>
     </div>
-    <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-overlay">
-          <h1>Welcome to Global Trip Planner</h1>
-          <p>Discover your next adventure</p>
-          <button class="hero-btn">Explore Now</button>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn">&times;</div>
+    <a href="index.html" class="active">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="book.html">Booking</a>
+  </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Welcome to Global Trip Planner</h1>
+        <p>Discover your next adventure</p>
+        <button class="hero-btn">Explore Now</button>
+      </div>
+    </section>
+
+    <!-- Best Destinations Section -->
+    <section class="destinations-section">
+      <h2>Best Destinations to Experience</h2>
+      <div class="destinations-container">
+        <div class="card-des">
+          <img src="/project/images/des1.webp" alt="Destination Image" />
+          <p>Antique lounge | Bamboo & leather</p>
+          <div class="card-info"><span>📅</span><span>831</span></div>
         </div>
-      </section>
-
-      <!-- Best Destinations Section -->
-      <section class="destinations-section">
-        <h2>Best Destinations to Experience</h2>
-        <div class="destinations-container">
-          <div class="card-des">
-            <img src="/project/images/des1.webp" alt="Destination Image" />
-            <p>Antique lounge | Bamboo & leather</p>
-            <div class="card-info"><span>📅</span><span>831</span></div>
-          </div>
-          <div class="card-des">
-            <img src="/project/images/des2.webp" alt="Destination Image" />
-            <p>The Best of Vienna and the Alps: A Tour of Austria</p>
-            <div class="card-info"><span>📅</span><span>831</span></div>
-          </div>
-          <div class="card-des">
-            <img src="/project/images/des3.webp" alt="Destination Image" />
-            <p>Mu Cang Chai – A comprehensive travel guide</p>
-            <div class="card-info"><span>📅</span><span>2,231</span></div>
-          </div>
-          <!-- Add more cards as needed -->
+        <div class="card-des">
+          <img src="/project/images/des2.webp" alt="Destination Image" />
+          <p>The Best of Vienna and the Alps: A Tour of Austria</p>
+          <div class="card-info"><span>📅</span><span>831</span></div>
         </div>
-      </section>
-
-
-      <section class="news-section">
-        <h2>Latest News & Stories</h2>
-        <div class="news-content">
-          <!-- Articles will be populated here by JavaScript -->
+        <div class="card-des">
+          <img src="/project/images/des3.webp" alt="Destination Image" />
+          <p>Mu Cang Chai – A comprehensive travel guide</p>
+          <div class="card-info"><span>📅</span><span>2,231</span></div>
         </div>
-      </section>
-      
+        <!-- Add more cards as needed -->
+      </div>
+    </section>
 
-      <section class="container">
-            <!-- Intro Section -->
-            <div class="intro">
-              <p class="quote">“Travel is the process of moving from one place to another, often with the purpose of experiencing new cultures, seeing new sights, or simply taking a break from everyday life.”</p>
-              <div class="user-count">
-                <span>👤👤👤👤👤</span>
-                <p>200k users have joined us!</p>
-              </div>
-            </div>
-        
-            <!-- Tours & Packages Section -->
-            <div class="tours-section">
-              <h2>Tours & Packages</h2>
-              <a href="#" class="view-all">View All →</a>
-              <div class="card-container">
-                <div class="card-prix">
-                  <span class="price">$2400</span>
-                  <div class="image-placeholder"></div>
-                  <h3>10-day trip to Scotland</h3>
-                  <p><span class="duration">10 days</span></p>
-                  <p class="rating">★★★★☆</p>
-                </div>
-                <div class="card-prix">
-                  <span class="price">$3000</span>
-                  <div class="image-placeholder"></div>
-                  <h3>21-day trip across Europe</h3>
-                  <p><span class="duration">21 days</span></p>
-                  <p class="rating">★★★★★</p>
-                </div>
-                <div class="card-prix">
-                  <span class="price">$1050</span>
-                  <div class="image-placeholder"></div>
-                  <h3>1 month-cruise to Alaska</h3>
-                  <p><span class="duration">30 days</span></p>
-                  <p class="rating">★★★★☆</p>
-                </div>
-                <div class="card-prix">
-                  <span class="price">$1200</span>
-                  <div class="image-placeholder"></div>
-                  <h3>Tour in Switzerland</h3>
-                  <p><span class="duration">5 days 4 nights</span></p>
-                  <p class="rating">★★★☆☆</p>
-                </div>
-                <div class="card-prix">
-                  <span class="price">$1500</span>
-                  <div class="image-placeholder"></div>
-                  <h3>Nature Hike in Patagonia</h3>
-                  <p><span class="duration">3 days 2 nights</span></p>
-                  <p class="rating">★★★★☆</p>
-                </div>
-                <div class="card-prix">
-                  <span class="price">$1100</span>
-                  <div class="image-placeholder"></div>
-                  <h3>Architecture Tour in Rome</h3>
-                  <p><span class="duration">2 days 1 night</span></p>
-                  <p class="rating">★★★☆☆</p>
-                </div>
-              </div>
-            </div>
-      </section>
+
+    <section class="news-section">
+      <h2>Latest News & Stories</h2>
+      <div class="news-content">
+        <!-- Articles will be populated here by JavaScript -->
+      </div>
+    </section>
+
+
+    <section class="container">
+      <!-- Intro Section -->
+      <div class="intro">
+        <p class="quote">“Travel is the process of moving from one place to another, often with the purpose of
+          experiencing new cultures, seeing new sights, or simply taking a break from everyday life.”</p>
+        <div class="user-count">
+          <span>👤👤👤👤👤</span>
+          <p>200k users have joined us!</p>
+        </div>
+      </div>
+
+      <!-- Tours & Packages Section -->
+      <div class="tours-section">
+        <h2>Tours & Packages</h2>
+        <a href="#" class="view-all">View All →</a>
+        <div class="card-container">
+          <div class="card-prix">
+            <span class="price">$2400</span>
+            <div class="image-placeholder"></div>
+            <h3>10-day trip to Scotland</h3>
+            <p><span class="duration">10 days</span></p>
+            <p class="rating">★★★★☆</p>
+          </div>
+          <div class="card-prix">
+            <span class="price">$3000</span>
+            <div class="image-placeholder"></div>
+            <h3>21-day trip across Europe</h3>
+            <p><span class="duration">21 days</span></p>
+            <p class="rating">★★★★★</p>
+          </div>
+          <div class="card-prix">
+            <span class="price">$1050</span>
+            <div class="image-placeholder"></div>
+            <h3>1 month-cruise to Alaska</h3>
+            <p><span class="duration">30 days</span></p>
+            <p class="rating">★★★★☆</p>
+          </div>
+          <div class="card-prix">
+            <span class="price">$1200</span>
+            <div class="image-placeholder"></div>
+            <h3>Tour in Switzerland</h3>
+            <p><span class="duration">5 days 4 nights</span></p>
+            <p class="rating">★★★☆☆</p>
+          </div>
+          <div class="card-prix">
+            <span class="price">$1500</span>
+            <div class="image-placeholder"></div>
+            <h3>Nature Hike in Patagonia</h3>
+            <p><span class="duration">3 days 2 nights</span></p>
+            <p class="rating">★★★★☆</p>
+          </div>
+          <div class="card-prix">
+            <span class="price">$1100</span>
+            <div class="image-placeholder"></div>
+            <h3>Architecture Tour in Rome</h3>
+            <p><span class="duration">2 days 1 night</span></p>
+            <p class="rating">★★★☆☆</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -185,16 +205,13 @@
         </div>
         <div class="footer-column">
           <h4>Social</h4>
-          <a href="https://www.facebook.com/"
-            ><i class="social"
-              ><img src="/project/images/facebook.svg" alt="facebook" /></i
-          ></a>
-          <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"
-            ><i class="social"
-              ><img src="/project/images/linkedin.svg" alt="map" /></i
-          ></a>
+          <a href="https://www.facebook.com/"><i class="social"><img src="/project/images/facebook.svg"
+                alt="facebook" /></i></a>
+          <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"><i class="social"><img
+                src="/project/images/linkedin.svg" alt="map" /></i></a>
         </div>
     </footer>
-    
-  </body>
+
+</body>
+
 </html>

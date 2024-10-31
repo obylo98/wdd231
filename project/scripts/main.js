@@ -1,6 +1,14 @@
 // script.js
-document.querySelector(".hamburger-menu").addEventListener("click", () => {
-  document.querySelector(".mobile-menu").classList.toggle("show");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeButton = document.querySelector(".close-btn");
+
+hamburgerMenu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("show");
+});
+
+closeButton.addEventListener("click", () => {
+  mobileMenu.classList.remove("show");
 });
 
 const url = "./data/article.json"; // JSON file location

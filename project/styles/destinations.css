@@ -1,19 +1,27 @@
 :root {
-  --main-color: #0B1665;
+  --main-color: #0b1665;
   --header-color: rgb(255, 255, 255);
   --paragraph-color: rgb(192, 190, 190);
-  --button-img: linear-gradient(to right,
-      #314755 0%,
-      #26a0da 51%,
-      #314755 100%);
+  --button-img: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
   --card-color: rgb(223, 225, 226);
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 10px;
   box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .navbar {
@@ -56,7 +64,7 @@ body {
 .hamburger-menu span {
   width: 25px;
   height: 3px;
-  background-color: #4a4a4a;
+  background-color: var(--header-color);
   border-radius: 5px;
 }
 
@@ -68,18 +76,32 @@ body {
   right: 0;
   width: 70%;
   height: 100%;
-  background-color: #f8f8f8;
+  background-color: var(--main-color);
   padding-top: 60px;
   gap: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   transform: translateX(100%);
   transition: transform 0.3s ease;
+  z-index: 1000;
+}
+.close-btn {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--header-color);
+  align-self: flex-end;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.mobile-menu.show {
+  display: flex;
+  transform: translateX(0);
 }
 
 .mobile-menu a {
   padding: 10px 20px;
   font-weight: 600;
-  color: #4a4a4a;
+  color: var(--header-color);
   text-decoration: none;
 }
 
@@ -140,16 +162,6 @@ body {
   cursor: pointer;
 }
 
-/* h2 {
-    font-size: 1.5em;
-    margin: 20px;
-    text-align: left;
-} */
-
-/* Featured Experience Section */
-
-
-/* Best Destinations Section */
 .best-destinations {
   margin: 20px;
 }
@@ -231,8 +243,6 @@ body {
   cursor: pointer;
 }
 
-
-
 /* Footer General Styles */
 .footer {
   background-color: var(--main-color);
@@ -273,7 +283,6 @@ body {
 .footer-subscribe p {
   font-weight: bold;
   margin-bottom: 10px;
-  
 }
 
 .subscribe-form {
@@ -330,16 +339,7 @@ body {
   width: 40px;
   border-radius: 40%;
 }
-/* Media Queries for Responsiveness */
-/* @media (max-width: 1024px) {
-    .destination-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
-    .destinations-section h2 {
-        font-size: 2rem;
-    }
-} */
 
 @media (max-width: 768px) {
   .navbar-links,
@@ -349,10 +349,6 @@ body {
 
   .hamburger-menu {
     display: flex;
-  }
-
-  .mobile-menu.show {
-    transform: translateX(0);
   }
 
   .destinations-section {
@@ -366,8 +362,6 @@ body {
   .destinations-section h2 {
     font-size: 1.2rem;
   }
-
-  
 
   .food-tour-container {
     padding-left: 10px;

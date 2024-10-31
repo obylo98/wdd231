@@ -1,9 +1,13 @@
-const ham = document.querySelector("#menu");
-const nav = document.querySelector("nav");
-ham.addEventListener("click", () => {
-    // Toggle hamburger
-    ham.classList.toggle("show");
-    nav.classList.toggle("show");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeButton = document.querySelector(".close-btn");
+
+hamburgerMenu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("show");
+});
+
+closeButton.addEventListener("click", () => {
+  mobileMenu.classList.remove("show");
 });
 
 // Capture the current timestamp

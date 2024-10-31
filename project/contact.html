@@ -1,305 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/project/styles/contact.css" />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <header class="navbar">
-      <div class="navbar-logo">
-        <img src="/project/images/logo.svg" alt="SERENE escapes logo" />
-      </div>
-      <nav class="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="contact.html" class="active">Contact Us</a>
-        <a href="book.html">Booking</a>
-      </nav>
-      <div class="navbar-icons">
-        <a href="#"
-          ><i class="icon8-search"
-            ><img src="/project/images/search.svg" alt="search" /></i
-        ></a>
-        <a href="#"
-          ><i class="icon-map"
-            ><img src="/project/images/map.svg" alt="map" /></i
-        ></a>
-        <a href="#"
-          ><i class="icon-profile"></i
-          ><img src="/project/images/profile.svg" alt="profile"
-        /></a>
-      </div>
-      <div class="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Trip Planner: Contact Page</title>
+  <meta name="description" content=" Global Trip Planner Contact Page by Andrew Obinna Onyekwere" />
+  <meta name="author" content="Andrew Obinna Onyekwere" />
+
+  <!--  Essential META Tags -->
+  <meta property="og:title" content="Global Trip Planner Contact Page" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/obylo98/wdd231/main/project/images/hero.webp" />
+  <meta property="og:url" content="https://obylo98.github.io/wdd231/project/index.html" />
+  <!-- *** Call to Action *** -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!--  Non-Essential, But Recommended -->
+  <meta property="og:description" content="Global Trip Planner Contact Page by Andrew Obinna Onyekwere" />
+  <meta property="og:site_name" content="Obylo98" />
+  <meta name="twitter:image:alt" content="Arial view of victoria falls attractions" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Embed Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/project/styles/normalize.css" />
+  <link rel="stylesheet" href="/project/styles/contact.css" />
+  <script src="/project/scripts/contact.js" defer></script>
+  <link rel="icon" href="/project/images/favicon.ico" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-logo">
+      <img src="/project/images/logo.svg" alt="SERENE escapes logo" />
+    </div>
+    <nav class="navbar-links">
       <a href="index.html">Home</a>
       <a href="destinations.html">Destinations</a>
       <a href="contact.html" class="active">Contact Us</a>
       <a href="book.html">Booking</a>
+    </nav>
+    <div class="navbar-icons">
+      <a href="#"><i class="icon8-search"><img src="/project/images/search.svg" alt="search" /></i></a>
+      <a href="#"><i class="icon-map"><img src="/project/images/map.svg" alt="map" /></i></a>
+      <a href="#"><i class="icon-profile"></i><img src="/project/images/profile.svg" alt="profile" /></a>
     </div>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-overlay">
-          <h1>Welcome to Subscription Service</h1>
-          <p>We're here to help you get started!</p>
-          <button class="hero-btn">Explore Now</button>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn">&times;</div>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="contact.html" class="active">Contact Us</a>
+    <a href="book.html">Booking</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Welcome to Subscription Service</h1>
+        <p>We're here to help you get started!</p>
+        <button class="hero-btn">Explore Now</button>
+      </div>
+    </section>
+    <!-- Form Container -->
+    <div class="content-wrapper">
+      <div class="form-container">
+        <h1>Apply for Membership</h1>
+        <div class="membership-form-wrapper">
+          <form action="received.html" method="get">
+            <div class="form-group">
+              <label for="firstname">
+                First Name:
+                <input type="text" id="firstname" name="firstname" required title="First Name"
+                  autocomplete="given-name" />
+              </label>
+              <br />
+              <label for="lastname">
+                Last Name:
+                <input type="text" id="lastname" name="lastname" required title="Last Name"
+                  autocomplete="family-name" />
+              </label>
+              <br />
+              <label for="org_title">
+                Organizational Title:
+                <input type="text" id="org_title" name="org_title" pattern="[A-Za-z\- ]{7,}"
+                  title="Organizational Title" autocomplete="organization-title" />
+              </label>
+              <br />
+              <label for="email">
+                Email Address:
+                <input type="email" id="email" name="email" required title="Email" autocomplete="email"
+                  placeholder="example@mail.com" />
+              </label>
+              <br />
+              <label for="mobile">
+                Mobile Phone Number:
+                <input type="tel" id="mobile" name="mobile" required title="Mobile Phone" autocomplete="tel" />
+              </label>
+              <br />
+              <label for="business">
+                Business/Organization Name:
+                <input type="text" id="business" name="business" required title="Business/Organization Name"
+                  autocomplete="organization" />
+              </label>
+              <br />
+              <label for="membership_level">
+                Subscription Type:
+                <select id="membership_level" name="membership_level" required title="Select Membership Level">
+                  <option value="" disabled selected>
+                    Select your Subscription
+                  </option>
+                  <!-- Placeholder option -->
+                  <option value="scotland">
+                    10-day trip to Scotland
+                  </option>
+                  <option value="europe">21-day trip across Europe</option>
+                  <option value="alaska">1 month-cruise to Alaska</option>
+                  <option value="switzerland">Tour in Switzerland</option>
+                  <option value="patagonia">Nature Hike in Patagonia</option>
+                  <option value="rome">Architecture Tour in Rome</option>
+                </select>
+              </label>
+              <br />
+              <label for="business_desc">
+                Additional Request:
+                <textarea id="business_desc" name="business_desc" title="Business Description"></textarea>
+              </label>
+              <br />
+              <input type="hidden" name="timestamp" id="timestamp" />
+              <input type="submit" value="Submit Application" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <section id="membership-cards">
+        <div class="card" id="np-card">
+          <h2>10-day trip to Scotland</h2>
+          <button class="open-button" data-modal="scotland-modal">
+            Details
+          </button>
+        </div>
+        <div class="card" id="bronze-card">
+          <h2>21-day trip across Europe</h2>
+          <button class="open-button" data-modal="europe-modal">
+            Details
+          </button>
+        </div>
+        <div class="card" id="silver-card">
+          <h2>1 month-cruise to Alaska</h2>
+          <button class="open-button" data-modal="alaska-modal">
+            Details
+          </button>
+        </div>
+        <div class="card" id="gold-card">
+          <h2>Tour in Switzerland</h2>
+          <button class="open-button" data-modal="switzerland-modal">
+            Details
+          </button>
+        </div>
+        <div class="card" id="gold-card">
+          <h2>Nature Hike in Patagonia</h2>
+          <button class="open-button" data-modal="patagonia-modal">
+            Details
+          </button>
+        </div>
+        <div class="card" id="gold-card">
+          <h2>Architecture Tour in Rome</h2>
+          <button class="open-button" data-modal="rome-modal">Details</button>
         </div>
       </section>
-      <!-- Form Container -->
-      <div class="content-wrapper">
-        <div class="form-container">
-          <h1>Apply for Membership</h1>
-          <div class="membership-form-wrapper">
-            <form action="thankyou.html" method="get">
-              <div class="form-group">
-                <label for="firstname">
-                  First Name:
-                  <input
-                    type="text"
-                    id="firstname"
-                    name="firstname"
-                    required
-                    title="First Name"
-                    autocomplete="given-name"
-                  />
-                </label>
-                <br />
-                <label for="lastname">
-                  Last Name:
-                  <input
-                    type="text"
-                    id="lastname"
-                    name="lastname"
-                    required
-                    title="Last Name"
-                    autocomplete="family-name"
-                  />
-                </label>
-                <br />
-                <label for="org_title">
-                  Organizational Title:
-                  <input
-                    type="text"
-                    id="org_title"
-                    name="org_title"
-                    pattern="[A-Za-z\- ]{7,}"
-                    title="Organizational Title"
-                    autocomplete="organization-title"
-                  />
-                </label>
-                <br />
-                <label for="email">
-                  Email Address:
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    title="Email"
-                    autocomplete="email"
-                    placeholder="example@mail.com"
-                  />
-                </label>
-                <br />
-                <label for="mobile">
-                  Mobile Phone Number:
-                  <input
-                    type="tel"
-                    id="mobile"
-                    name="mobile"
-                    required
-                    title="Mobile Phone"
-                    autocomplete="tel"
-                  />
-                </label>
-                <br />
-                <label for="business">
-                  Business/Organization Name:
-                  <input
-                    type="text"
-                    id="business"
-                    name="business"
-                    required
-                    title="Business/Organization Name"
-                    autocomplete="organization"
-                  />
-                </label>
-                <br />
-                <label for="membership_level">
-                  Membership Level:
-                  <select
-                    id="membership_level"
-                    name="membership_level"
-                    required
-                    title="Select Membership Level"
-                  >
-                    <option value="" disabled selected>
-                      Select your membership level
-                    </option>
-                    <!-- Placeholder option -->
-                    <option value="np">
-                      NP Membership (non-profit, no fee)
-                    </option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                  </select>
-                </label>
-                <br />
-                <label for="business_desc">
-                  Business Description:
-                  <textarea
-                    id="business_desc"
-                    name="business_desc"
-                    title="Business Description"
-                  ></textarea>
-                </label>
-                <br />
-                <input type="hidden" name="timestamp" id="timestamp" />
-                <input type="submit" value="Submit Application" />
-              </div>
-            </form>
-          </div>
-        </div>
-        <section id="membership-cards">
-          <div class="card" id="np-card">
-            <h2>10-day trip to Scotland</h2>
-            <button class="open-button" data-modal="scotland-modal">
-              Details
-            </button>
-          </div>
-          <div class="card" id="bronze-card">
-            <h2>21-day trip across Europe</h2>
-            <button class="open-button" data-modal="europe-modal">
-              Details
-            </button>
-          </div>
-          <div class="card" id="silver-card">
-            <h2>1 month-cruise to Alaska</h2>
-            <button class="open-button" data-modal="alaska-modal">
-              Details
-            </button>
-          </div>
-          <div class="card" id="gold-card">
-            <h2>Tour in Switzerland</h2>
-            <button class="open-button" data-modal="switzerland-modal">
-              Details
-            </button>
-          </div>
-          <div class="card" id="gold-card">
-            <h2>Nature Hike in Patagonia</h2>
-            <button class="open-button" data-modal="patagonia-modal">
-              Details
-            </button>
-          </div>
-          <div class="card" id="gold-card">
-            <h2>Architecture Tour in Rome</h2>
-            <button class="open-button" data-modal="rome-modal">Details</button>
-          </div>
-        </section>
+    </div>
+    <dialog id="scotland-modal" class="modal">
+      <p>
+        <strong>Highlights:</strong>
+        <br>
+        Edinburgh Castle and the Royal Mile
+        <br>
+        Loch Ness and the Highlands
+        <br>
+        Whisky tasting tours in traditional distilleries
+        <br>
+        Guided hikes through lush countryside and rugged coastlines
+      </p>
+      <button class="close-button">Close</button>
+    </dialog>
+    <dialog id="europe-modal" class="modal">
+      <p>
+        <strong>Highlights:</strong>
+        <br>
+        Paris, Rome, and Barcelona city tours
+        <br>
+        Guided visits to UNESCO World Heritage sites
+        <br>
+        Authentic culinary experiences in local restaurants
+        <br>
+        Scenic train rides through the Swiss Alps and French Riviera
+      </p>
+      <button class="close-button">Close</button>
+    </dialog>
+    <dialog id="alaska-modal" class="modal">
+      <p>
+        <Strong>Highlights:</Strong>
+        <br>
+        Glacier Bay National Park and fjord exploration
+        <br>
+        Whale watching and guided wildlife tours
+        <br>
+        Onboard gourmet dining and live entertainment
+        <br>
+        Excursions to remote Alaskan villages and indigenous cultural experiences
+      </p>
+      <button class="close-button">Close</button>
+    </dialog>
+    <dialog id="switzerland-modal" class="modal">
+      <p>
+        <strong>Highlights:</strong>
+        <br>
+        Guided tours of Zurich, Lucerne, and Geneva
+        <br>
+        Mount Pilatus and Jungfraujoch day trips
+        <br>
+        Chocolate and cheese tasting experiences
+        <br>
+        Scenic boat cruises and train rides through picturesque landscapes
+      </p>
+      <button class="close-button">Close</button>
+    </dialog>
+    <dialog id="patagonia-modal" class="modal">
+      <p>
+        <strong>Highlights:</strong>
+        <br>
+        Trekking in Torres del Paine National Park
+        <br>
+        Guided glacier tours and boat excursions
+        <br>
+        Scenic viewpoints of Andes mountains and fjords
+        <br>
+        Wildlife spotting, including guanacos, pumas, and condors
+      </p>
+      <button class="close-button">Close</button>
+    </dialog>
+    <dialog id="rome-modal" class="modal">
+      <p>
+        <strong>Highlights:</strong>
+        <br>
+        Visits to the Colosseum, Pantheon, and Roman Forum
+        <br>
+        Private tours of the Vatican Museums and Sistine Chapel
+        <br>
+        Walks through the historic districts with an expert guide
+        <br>
+        Discovering hidden gems and lesser-known architectural wonders
+      </p>
+      <button class="close-button">Close</button>
+    </dialog>
+  </main>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="/project/images/logo.svg" alt="Global Trip Planner Logo" />
+        <h2>Global Trip Planner</h2>
       </div>
-      <dialog id="scotland-modal" class="modal">
-        <p>
-          NP Membership Benefits: Access to exclusive workshops and resources,
-          free of charge for non-profits.
-        </p>
-        <button class="close-button">Close</button>
-      </dialog>
-      <dialog id="europe-modal" class="modal">
-        <p>
-          Bronze Membership Benefits: Basic support, newsletter subscriptions,
-          and event invitations.
-        </p>
-        <button class="close-button">Close</button>
-      </dialog>
-      <dialog id="alaska-modal" class="modal">
-        <p>
-          Silver Membership Benefits: Enhanced support, discounts on events, and
-          networking opportunities.
-        </p>
-        <button class="close-button">Close</button>
-      </dialog>
-      <dialog id="switzerland-modal" class="modal">
-        <p>
-          Gold Membership Benefits: Full support including personalized
-          services, all-access membership privileges, and premium networking
-          events.
-        </p>
-        <button class="close-button">Close</button>
-      </dialog>
-      <dialog id="patagonia-modal" class="modal">
-        <p>
-          Gold Membership Benefits: Full support including personalized
-          services, all-access membership privileges, and premium networking
-          events.
-        </p>
-        <button class="close-button">Close</button>
-      </dialog>
-      <dialog id="rome-modal" class="modal">
-        <p>
-          Gold Membership Benefits: Full support including personalized
-          services, all-access membership privileges, and premium networking
-          events.
-        </p>
-        <button class="close-button">Close</button>
-      </dialog>
-    </main>
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-logo">
-          <img src="/project/images/logo.svg" alt="Global Trip Planner Logo" />
-          <h2>Global Trip Planner</h2>
-        </div>
-        <p class="footer-description">
-          Discover a premier digital consumer brand offering comprehensive
-          travel information and inspiration. With a rich heritage of over 30
-          years in print and two decades online, this platform provides accurate
-          content on top global destinations. From cities and airports to
-          resorts and attractions, our dedicated editorial team updates the
-          portal daily, attracting millions of unique users monthly.
-        </p>
-      </div>
+      <p class="footer-description">
+        Discover a premier digital consumer brand offering comprehensive
+        travel information and inspiration. With a rich heritage of over 30
+        years in print and two decades online, this platform provides accurate
+        content on top global destinations. From cities and airports to
+        resorts and attractions, our dedicated editorial team updates the
+        portal daily, attracting millions of unique users monthly.
+      </p>
+    </div>
 
-      <div class="footer-subscribe">
-        <p>Subscribe to our channel</p>
-        <form class="subscribe-form">
-          <input type="email" placeholder="Email" aria-label="Email" />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
+    <div class="footer-subscribe">
+      <p>Subscribe to our channel</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Email" aria-label="Email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
 
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>ABOUT</h4>
-          <a href="contact.html">Contact Us</a>
-        </div>
-        <div class="footer-column">
-          <h4>DESTINATIONS</h4>
-          <a href="#">News</a>
-          <a href="book.html">Booking</a>
-        </div>
-        <div class="footer-column">
-          <h4>Social</h4>
-          <a href="https://www.facebook.com/"
-            ><i class="social"
-              ><img src="/project/images/facebook.svg" alt="facebook" /></i
-          ></a>
-          <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"
-            ><i class="social"
-              ><img src="/project/images/linkedin.svg" alt="map" /></i
-          ></a>
-        </div>
-    </footer>
-  </body>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-column">
+        <h4>DESTINATIONS</h4>
+        <a href="#">News</a>
+        <a href="book.html">Booking</a>
+      </div>
+      <div class="footer-column">
+        <h4>Social</h4>
+        <a href="https://www.facebook.com/"><i class="social"><img src="/project/images/facebook.svg"
+              alt="facebook" /></i></a>
+        <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"><i class="social"><img
+              src="/project/images/linkedin.svg" alt="map" /></i></a>
+      </div>
+  </footer>
+</body>
+
 </html>
