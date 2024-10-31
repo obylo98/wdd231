@@ -1,9 +1,12 @@
 /* styles.css */
 :root {
-  --main-color: rgb(40, 54, 24);
+  --main-color: #0B1665;
   --header-color: rgb(255, 255, 255);
   --paragraph-color: rgb(192, 190, 190);
-  --button-img: linear-gradient(rgb(255, 255, 0), rgb(255, 138, 5));
+  --button-img: linear-gradient(to right,
+      #314755 0%,
+      #26a0da 51%,
+      #314755 100%);
   --card-color: rgb(223, 225, 226);
 }
 /* General Styles */
@@ -339,27 +342,13 @@ h2 {
   text-align: center;
 }
 
-/* Image Grid */
-.image-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 40px;
-}
 
-.image-placeholder {
-  width: 100%;
-  height: 150px;
-  background-color: #e0e0e0;
-  border-radius: 8px;
-  flex: 1;
-}
 
 /* Footer General Styles */
 .footer {
-  background-color: #f9f9f9;
+  background-color: var(--main-color);
   padding: 40px 20px;
-  color: #333;
+  color: var(--header-color);
   font-family: Arial, sans-serif;
 }
 
@@ -374,7 +363,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #333;
+  color: var(--header-color);
 }
 
 .footer-logo img {
@@ -385,7 +374,7 @@ h2 {
 .footer-description {
   max-width: 600px;
   margin: 20px 0;
-  color: #666;
+  color: var(--header-color);
 }
 
 .footer-subscribe {
@@ -432,7 +421,7 @@ h2 {
 }
 
 .footer-column a {
-  color: #333;
+  color: var(--header-color);
   display: block;
   margin-bottom: 5px;
   text-decoration: none;
@@ -442,6 +431,16 @@ h2 {
   color: #0073e6;
 }
 
+.social {
+  display: flex;
+  align-self: baseline;
+  gap: 20px;
+}
+
+.social img {
+  width: 40px;
+  border-radius: 40%;
+}
 /* Subscribe Section */
 
 /* Responsive Styles */
@@ -519,10 +518,6 @@ h2 {
 
   .card-prix {
     width: 100%;
-  }
-
-  .image-grid {
-    flex-direction: column;
   }
 
   .footer-top {

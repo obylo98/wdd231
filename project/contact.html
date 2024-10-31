@@ -15,13 +15,22 @@
       <nav class="navbar-links">
         <a href="index.html">Home</a>
         <a href="destinations.html">Destinations</a>
-        <a href="trips.html">Trips</a>
         <a href="contact.html" class="active">Contact Us</a>
+        <a href="book.html">Booking</a>
       </nav>
       <div class="navbar-icons">
-        <a href="#"><i class="icon-search"></i></a>
-        <a href="#"><i class="icon-map"></i></a>
-        <a href="#"><i class="icon-profile"></i></a>
+        <a href="#"
+          ><i class="icon8-search"
+            ><img src="/project/images/search.svg" alt="search" /></i
+        ></a>
+        <a href="#"
+          ><i class="icon-map"
+            ><img src="/project/images/map.svg" alt="map" /></i
+        ></a>
+        <a href="#"
+          ><i class="icon-profile"></i
+          ><img src="/project/images/profile.svg" alt="profile"
+        /></a>
       </div>
       <div class="hamburger-menu">
         <span></span>
@@ -34,8 +43,8 @@
     <div class="mobile-menu">
       <a href="index.html">Home</a>
       <a href="destinations.html">Destinations</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="book.html">Booking</a>
     </div>
 
     <main>
@@ -43,53 +52,214 @@
       <section class="hero">
         <div class="hero-overlay">
           <h1>Welcome to Subscription Service</h1>
-          <p>
-            We're here to help you
-            get started!
-          </p>
+          <p>We're here to help you get started!</p>
           <button class="hero-btn">Explore Now</button>
         </div>
       </section>
       <!-- Form Container -->
-      <div class="form-container">
-        <h2>Subscription Inquiry</h2>
-        <form id="inquiryForm">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
+      <div class="content-wrapper">
+        <div class="form-container">
+          <h1>Apply for Membership</h1>
+          <div class="membership-form-wrapper">
+            <form action="thankyou.html" method="get">
+              <div class="form-group">
+                <label for="firstname">
+                  First Name:
+                  <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    required
+                    title="First Name"
+                    autocomplete="given-name"
+                  />
+                </label>
+                <br />
+                <label for="lastname">
+                  Last Name:
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    required
+                    title="Last Name"
+                    autocomplete="family-name"
+                  />
+                </label>
+                <br />
+                <label for="org_title">
+                  Organizational Title:
+                  <input
+                    type="text"
+                    id="org_title"
+                    name="org_title"
+                    pattern="[A-Za-z\- ]{7,}"
+                    title="Organizational Title"
+                    autocomplete="organization-title"
+                  />
+                </label>
+                <br />
+                <label for="email">
+                  Email Address:
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    title="Email"
+                    autocomplete="email"
+                    placeholder="example@mail.com"
+                  />
+                </label>
+                <br />
+                <label for="mobile">
+                  Mobile Phone Number:
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    required
+                    title="Mobile Phone"
+                    autocomplete="tel"
+                  />
+                </label>
+                <br />
+                <label for="business">
+                  Business/Organization Name:
+                  <input
+                    type="text"
+                    id="business"
+                    name="business"
+                    required
+                    title="Business/Organization Name"
+                    autocomplete="organization"
+                  />
+                </label>
+                <br />
+                <label for="membership_level">
+                  Membership Level:
+                  <select
+                    id="membership_level"
+                    name="membership_level"
+                    required
+                    title="Select Membership Level"
+                  >
+                    <option value="" disabled selected>
+                      Select your membership level
+                    </option>
+                    <!-- Placeholder option -->
+                    <option value="np">
+                      NP Membership (non-profit, no fee)
+                    </option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                  </select>
+                </label>
+                <br />
+                <label for="business_desc">
+                  Business Description:
+                  <textarea
+                    id="business_desc"
+                    name="business_desc"
+                    title="Business Description"
+                  ></textarea>
+                </label>
+                <br />
+                <input type="hidden" name="timestamp" id="timestamp" />
+                <input type="submit" value="Submit Application" />
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required />
+        </div>
+        <section id="membership-cards">
+          <div class="card" id="np-card">
+            <h2>10-day trip to Scotland</h2>
+            <button class="open-button" data-modal="scotland-modal">
+              Details
+            </button>
           </div>
-          <div class="form-group">
-            <label for="subscription">Subscription Type</label>
-            <select id="subscription" name="subscription" required>
-              <option value="" disabled selected>Select Subscription</option>
-              <option value="Basic">Basic</option>
-              <option value="Standard">Standard</option>
-              <option value="Premium">Premium</option>
-            </select>
+          <div class="card" id="bronze-card">
+            <h2>21-day trip across Europe</h2>
+            <button class="open-button" data-modal="europe-modal">
+              Details
+            </button>
           </div>
-          <div class="form-group">
-            <label for="comments">Additional Comments</label>
-            <textarea
-              id="comments"
-              name="comments"
-              placeholder="Add any additional comments here..."
-            ></textarea>
+          <div class="card" id="silver-card">
+            <h2>1 month-cruise to Alaska</h2>
+            <button class="open-button" data-modal="alaska-modal">
+              Details
+            </button>
           </div>
-          <button type="button" class="submit-btn" onclick="submitForm()">
-            Submit Inquiry
-          </button>
-        </form>
+          <div class="card" id="gold-card">
+            <h2>Tour in Switzerland</h2>
+            <button class="open-button" data-modal="switzerland-modal">
+              Details
+            </button>
+          </div>
+          <div class="card" id="gold-card">
+            <h2>Nature Hike in Patagonia</h2>
+            <button class="open-button" data-modal="patagonia-modal">
+              Details
+            </button>
+          </div>
+          <div class="card" id="gold-card">
+            <h2>Architecture Tour in Rome</h2>
+            <button class="open-button" data-modal="rome-modal">Details</button>
+          </div>
+        </section>
       </div>
+      <dialog id="scotland-modal" class="modal">
+        <p>
+          NP Membership Benefits: Access to exclusive workshops and resources,
+          free of charge for non-profits.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+      <dialog id="europe-modal" class="modal">
+        <p>
+          Bronze Membership Benefits: Basic support, newsletter subscriptions,
+          and event invitations.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+      <dialog id="alaska-modal" class="modal">
+        <p>
+          Silver Membership Benefits: Enhanced support, discounts on events, and
+          networking opportunities.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+      <dialog id="switzerland-modal" class="modal">
+        <p>
+          Gold Membership Benefits: Full support including personalized
+          services, all-access membership privileges, and premium networking
+          events.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+      <dialog id="patagonia-modal" class="modal">
+        <p>
+          Gold Membership Benefits: Full support including personalized
+          services, all-access membership privileges, and premium networking
+          events.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
+      <dialog id="rome-modal" class="modal">
+        <p>
+          Gold Membership Benefits: Full support including personalized
+          services, all-access membership privileges, and premium networking
+          events.
+        </p>
+        <button class="close-button">Close</button>
+      </dialog>
     </main>
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-logo">
-          <img src="/project/images/logo.svg" alt="Serene Escapes Logo" />
-          <h2>SERENE escapes</h2>
+          <img src="/project/images/logo.svg" alt="Global Trip Planner Logo" />
+          <h2>Global Trip Planner</h2>
         </div>
         <p class="footer-description">
           Discover a premier digital consumer brand offering comprehensive
@@ -112,23 +282,24 @@
       <div class="footer-links">
         <div class="footer-column">
           <h4>ABOUT</h4>
-          <a href="#">FAQs</a>
+          <a href="contact.html">Contact Us</a>
         </div>
         <div class="footer-column">
           <h4>DESTINATIONS</h4>
-          <a href="#">Trips</a>
           <a href="#">News</a>
+          <a href="book.html">Booking</a>
         </div>
         <div class="footer-column">
-          <h4>COMMUNITY</h4>
-          <a href="#">Vlogs</a>
-          <a href="#">Events</a>
-          <a href="#">Podcasts</a>
+          <h4>Social</h4>
+          <a href="https://www.facebook.com/"
+            ><i class="social"
+              ><img src="/project/images/facebook.svg" alt="facebook" /></i
+          ></a>
+          <a href="https://www.linkedin.com/in/obinnaa-onyekwere/"
+            ><i class="social"
+              ><img src="/project/images/linkedin.svg" alt="map" /></i
+          ></a>
         </div>
-        <div class="footer-column">
-          <h4>SHOP</h4>
-        </div>
-      </div>
     </footer>
   </body>
 </html>

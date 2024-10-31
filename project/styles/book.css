@@ -1,13 +1,16 @@
 :root {
-  --main-color: #0B1665;
+  --main-color: #0b1665;
   --header-color: rgb(255, 255, 255);
   --paragraph-color: rgb(192, 190, 190);
-  --button-img: linear-gradient(to right,
-      #314755 0%,
-      #26a0da 51%,
-      #314755 100%);
+  --button-img: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
   --card-color: rgb(223, 225, 226);
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -82,34 +85,13 @@ body {
   text-decoration: none;
 }
 
-/* Hero Section */
-.hero {
-  width: 100%;
-  background-color: #e0e5ec;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero .hero-image {
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #d3d3d3;
-  border-radius: 8px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #999;
-  font-size: 1.5em;
-}
-
+/* Hero Section Styles */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  background-image: url("/project/images/hero2.webp"); /* Replace with the actual image URL */
+  height: 100vh;
+  background-image: url("/project/images/hero.webp"); /* Replace with the actual image URL */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -148,183 +130,89 @@ body {
   background-color: #555;
 }
 
-/* Form Container */
-/* .form-container {
-  background-color: #fff;
+h2 {
+  font-size: 1.5em;
+  margin: 20px;
+  text-align: left;
+}
+/* Section styling */
+.section {
+  max-width: 800px;
+  margin: 20px;
   padding: 20px;
+  background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 90%;
-  margin-top: 20px;
-}
-
-.form-container h2 {
-  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #333;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.submit-btn {
+.search-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1em;
+  border: none;
   background-color: #4caf50;
   color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.submit-btn:hover {
+.search-button:hover {
   background-color: #45a049;
-} */
+}
 
-.content-wrapper {
+.results-container,
+.saved-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  /* margin: 0 auto;
-  padding: 20px; */
-}
-
-
-.membership-form-wrapper,
-#membership-cards {
-  width: 100%;
-}
-
-.form-container {
-  width: 100%;
-}
-
-.membership-form-wrapper {
-  max-width: 600px;
-  margin-bottom: 20px;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-#membership-cards {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.social {
-  display: flex;
-  align-self: baseline;
+  flex-wrap: wrap;
   gap: 20px;
-}
-
-.social img {
-  width: 40px;
-  border-radius: 40%;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
   padding: 15px;
-  margin: 10px 0;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
-
-.card:nth-child(1) {
-  animation-delay: 0.5s;
-}
-
-.card:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.card:nth-child(3) {
-  animation-delay: 1.5s;
-}
-
-.card:nth-child(4) {
-  animation-delay: 2s;
-}
-
-.card:nth-child(5) {
-  animation-delay: 2.5s;
-}
-
-.card:nth-child(6) {
-  animation-delay: 3s;
+  text-align: left;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+.card h3 {
+  font-size: 1.25em;
+  margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-  .content-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px 20px;
-  }
-
-  #membership-cards {
-    width: 45%;
-  }
-
-  .membership-form-wrapper {
-    width: 45%;
-  }
+.card p {
+  font-size: 1em;
+  color: #555;
 }
+
+.card button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #45a049;
+}
+
+/* Footer General Styles */
 .footer {
   background-color: var(--main-color);
   padding: 40px 20px;
@@ -411,7 +299,16 @@ textarea {
   color: #0073e6;
 }
 
-/* Responsive Styles */
+.social {
+  display: flex;
+  align-self: baseline;
+  gap: 20px;
+}
+
+.social img {
+  width: 40px;
+  border-radius: 40%;
+}
 @media (max-width: 768px) {
   .navbar-links,
   .navbar-icons {
