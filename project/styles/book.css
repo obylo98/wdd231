@@ -108,7 +108,7 @@ h6 {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("/project/images/hero.webp"); /* Replace with the actual image URL */
+  background-image: url("/wdd231/project/images/hero.webp"); /* Replace with the actual image URL */
   background-size: cover;
   background-position: center;
   position: relative;
