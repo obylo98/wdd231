@@ -1,14 +1,7 @@
 :root {
   --main-color: #0b1665;
   --header-color: rgb(255, 255, 255);
-  --paragraph-color: rgb(2, 36, 25)
-  --button-img: linear-gradient(
-    to right,
-    #314755 0%,
-    #26a0da 51%,
-    #314755 100%
-  );
-  --card-color: rgb(223, 225, 226);
+  --paragraph-color: rgb(2, 36, 25);
 }
 
 body {
@@ -19,7 +12,12 @@ body {
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
